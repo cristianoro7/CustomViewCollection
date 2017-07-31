@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CourseView">
+        <attr name="weekHigh" format="dimension" />
+        <attr name="dayCounts" format="integer" />
+        <attr name="weekListTextSize" format="dimension" />
+        <attr name="weekListTextColor" format="color" />
+        <attr name="lessonBg" format="color" />
+        <attr name="firstLineColor" format="color" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="coursePadding" format="dimension" />
+        <attr name="morningCourseHeightRatio" format="float" />
+        <attr name="afternoonCourseHeightRatio" format="float" />
+        <attr name="lessonTextSize" format="dimension" />
+        <attr name="lessonNumberSize" format="dimension" />
+        <attr name="lessonTextColor" format="color" />
+        <attr name="morningLessonCount" format="integer" />
+        <attr name="afternoonLessonCount" format="integer" />
+    </declare-styleable>
+</resources>
