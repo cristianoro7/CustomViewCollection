@@ -202,9 +202,7 @@ public class CircleSnakeBar extends View {
                 Log.d(TAG, "onTouchEvent: " + isInSnakeTail(x, y));
                 if (isInSnakeTail(x, y)) {
                     mSweepAngle = (float) positionToAngle(x, y);
-                    mProgress = angleToProgress(mSweepAngle);
-                    angleToPosition(mSnakeTailR, mStartAngele, mSweepAngle);
-                    invalidate();
+                    progressInvalidate();
                     if (mListener != null) {
                         mListener.onSnaking(mProgress);
                     }
@@ -226,10 +224,14 @@ public class CircleSnakeBar extends View {
     public void setProgress(int progress) {
         if (progress != mProgress && progress >=0 && progress <= 100) {
             this.mProgress = progress;
-            mSweepAngle = progressToAngle(mProgress); //为了实时更新
-            angleToPosition(mSnakeTailR, mStartAngele, mSweepAngle);
-            invalidate();
+            progressInvalidate();
         }
+    }
+
+    private void progressInvalidate() {
+        mProgress = angleToProgress(mSweepAngle);
+        angleToPosition(mSnakeTailR, mStartAngele, mSweepAngle);
+        invalidate();
     }
 
     public interface OnCircleSnakeBarSnakeListener {
