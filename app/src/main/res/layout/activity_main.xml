@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.desperado.customviewcollection.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--<com.desperado.customviewcollection.imagecontainter.ImageViewContainer-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@color/colorPrimary"-->
+       <!--&gt;-->
+    <!--</com.desperado.customviewcollection.imagecontainter.ImageViewContainer>-->
+    <!--<com.desperado.customviewcollection.chatview.ChatView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="#fedcbd"/>-->
 
-</android.support.constraint.ConstraintLayout>
+    <com.desperado.customviewcollection.circlesnake.CircleSnakeBar
+        android:id="@+id/main_csb_snake_bar"
+        android:background="#2570a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

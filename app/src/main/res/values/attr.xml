@@ -18,4 +18,23 @@
         <attr name="morningLessonCount" format="integer" />
         <attr name="afternoonLessonCount" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="ImageViewContainer">
+
+        <attr name="horizontalSpace" format="dimension"/>
+        <attr name="verticalSpace" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CircleSnakeBar">
+        <attr name="radiusRatio" format="float"/>
+        <attr name="unreachedColor" format="color"/>
+        <attr name="reachedColor" format="color"/>
+        <attr name="unreachedBarWidth" format="dimension"/>
+        <attr name="reachedBarWidth" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="progress" format="integer"/>
+        <attr name="snakeTailRadius" format="dimension"/>
+        <attr name="AlphaSnakeTailRadius" format="dimension"/>
+    </declare-styleable>
 </resources>
